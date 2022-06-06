@@ -9,30 +9,30 @@ namespace JNVAdmin.Domain.Entities
         public string Name { get; private set; }
         public ICollection<Schedule> Schedules { get; set; }
 
-        public Snack(Guid id, string name, string modifiedBy, DateTime modified)
-        {
-            DomainExceptionValidation.When(string.IsNullOrEmpty(modifiedBy),
-                "Invalid modifiedBy. modifiedBy is required.");
-
-            ValidationDomain(name);
-
-            Id = id;
-            Modified = modified;
-            ModifiedBy = modifiedBy;
-        }
-
-        public Snack(string name, string createdBy, DateTime created)
+        public Snack(Guid id, string name, string createdBy)
         {
             DomainExceptionValidation.When(string.IsNullOrEmpty(createdBy),
                 "Invalid createdBy. createdBy is required.");
 
             ValidationDomain(name);
 
-            Created = created;
+            Id = id;
+            Created = DateTime.Now;
             CreatedBy = createdBy;
         }
 
-        public void Update(string name, string modifiedBy, DateTime modified)
+        public Snack(string name, string createdBy)
+        {
+            DomainExceptionValidation.When(string.IsNullOrEmpty(createdBy),
+                "Invalid createdBy. createdBy is required.");
+
+            ValidationDomain(name);
+
+            Created = DateTime.Now;
+            CreatedBy = createdBy;
+        }
+
+        public void Update(string name, string modifiedBy)
         {
             DomainExceptionValidation.When(string.IsNullOrEmpty(modifiedBy),
                 "Invalid modifiedBy. modifiedBy is required.");

@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JNVAdmin.API", "JNVAdmin.API\JNVAdmin.API.csproj", "{D361BAEF-8C10-4ED6-B0B2-ABBA5B5727A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNVAdmin.API", "JNVAdmin.API\JNVAdmin.API.csproj", "{D361BAEF-8C10-4ED6-B0B2-ABBA5B5727A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JNVAdmin.Application", "JNVAdmin.Application\JNVAdmin.Application.csproj", "{9354EBFF-7C50-4CE7-AEA5-01F2645C34F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNVAdmin.Application", "JNVAdmin.Application\JNVAdmin.Application.csproj", "{9354EBFF-7C50-4CE7-AEA5-01F2645C34F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JNVAdmin.Domain", "JNVAdmin.Domain\JNVAdmin.Domain.csproj", "{D01A68FB-54AD-4E9C-A3B1-7BA644B3EA7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNVAdmin.Domain", "JNVAdmin.Domain\JNVAdmin.Domain.csproj", "{D01A68FB-54AD-4E9C-A3B1-7BA644B3EA7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JNVAdmin.Infra.Data", "JNVAdmin.Infra.Data\JNVAdmin.Infra.Data.csproj", "{0823BAE1-A8D7-4551-9E1D-DEBE961C1DCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNVAdmin.Infra.Data", "JNVAdmin.Infra.Data\JNVAdmin.Infra.Data.csproj", "{0823BAE1-A8D7-4551-9E1D-DEBE961C1DCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JNVAdmin.Infra.IoC", "JNVAdmin.Infra.IoC\JNVAdmin.Infra.IoC.csproj", "{1ACB6FCA-C1DD-47D8-A22D-047A9C78897F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JNVAdmin.Infra.IoC", "JNVAdmin.Infra.IoC\JNVAdmin.Infra.IoC.csproj", "{1ACB6FCA-C1DD-47D8-A22D-047A9C78897F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JNVAdmin.Domain.Tests", "JNVAdmin.Domain.Tests\JNVAdmin.Domain.Tests.csproj", "{0FEFE1A6-C903-4735-9420-B8BE843B9F2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{1ACB6FCA-C1DD-47D8-A22D-047A9C78897F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1ACB6FCA-C1DD-47D8-A22D-047A9C78897F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1ACB6FCA-C1DD-47D8-A22D-047A9C78897F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FEFE1A6-C903-4735-9420-B8BE843B9F2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FEFE1A6-C903-4735-9420-B8BE843B9F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FEFE1A6-C903-4735-9420-B8BE843B9F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FEFE1A6-C903-4735-9420-B8BE843B9F2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

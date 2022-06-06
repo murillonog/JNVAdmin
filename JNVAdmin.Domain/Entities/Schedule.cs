@@ -18,7 +18,7 @@ namespace JNVAdmin.Domain.Entities
 
         public Schedule(Guid id, string name, DateTime date, int quantity, 
             decimal avarageAge, decimal spentValue, decimal receivedValue, 
-            decimal fullValue, string createdBy, DateTime created)
+            decimal fullValue, string createdBy)
         {
             DomainExceptionValidation.When(string.IsNullOrEmpty(createdBy),
                 "Invalid createdBy. createdBy is required.");
@@ -26,6 +26,8 @@ namespace JNVAdmin.Domain.Entities
             ValidationDomain(name, date, quantity, avarageAge, spentValue, receivedValue, fullValue);
 
             Id = id;
+            CreatedBy = createdBy;
+            Created = DateTime.Now;
         }
 
         public Schedule(string name, DateTime date, int quantity, 
@@ -37,7 +39,7 @@ namespace JNVAdmin.Domain.Entities
 
         public void Update(string name, DateTime date, int quantity,
             decimal avarageAge, decimal spentValue, decimal receivedValue,
-            decimal fullValue, string modifiedBy, DateTime modified, Guid snackId)
+            decimal fullValue, string modifiedBy, Guid snackId)
         {
             DomainExceptionValidation.When(string.IsNullOrEmpty(modifiedBy),
                 "Invalid modifiedBy. modifiedBy is required.");
@@ -45,6 +47,8 @@ namespace JNVAdmin.Domain.Entities
             ValidationDomain(name, date, quantity, avarageAge, spentValue, receivedValue, fullValue);
             
             SnackId = snackId;
+            ModifiedBy = modifiedBy;
+            Modified = DateTime.Now;
         }
 
         private void ValidationDomain(string name, DateTime date, int quantity, decimal avarageAge, decimal spentValue, decimal receivedValue, decimal fullValue)
