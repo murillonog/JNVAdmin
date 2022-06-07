@@ -10,7 +10,7 @@ namespace JNVAdmin.Domain.Tests
         [Fact(DisplayName = "Create Schedule OK")]
         public void CreateSchedule_WithValidParameters_ResultObjectValidState()
         {
-            Action action = () => new Schedule(Guid.NewGuid(), "Schedule Name", DateTime.Now, 0, 0, 0, 0, 0, "admin");
+            Action action = () => new Schedule(Guid.NewGuid(), "Schedule Name", DateTime.Now, 0, 0, 0, 0, 0);
             action.Should().NotThrow<JNVAdmin.Domain.Validation.DomainExceptionValidation>();
         }
     }
