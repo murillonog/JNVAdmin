@@ -55,8 +55,7 @@ namespace JNVAdmin.Infra.Data.Migrations
                     CreatedBy = table.Column<string>(type: "varchar(50)", unicode: false, maxLength: 50, nullable: true),
                     Created = table.Column<DateTime>(type: "datetime", nullable: true),
                     ModifiedBy = table.Column<string>(type: "varchar(50)", unicode: false, maxLength: 50, nullable: true),
-                    Modified = table.Column<DateTime>(type: "datetime", nullable: true),
-                    Active = table.Column<bool>(type: "bit", nullable: true)
+                    Modified = table.Column<DateTime>(type: "datetime", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -185,8 +184,7 @@ namespace JNVAdmin.Infra.Data.Migrations
                     CreatedBy = table.Column<string>(type: "varchar(50)", unicode: false, maxLength: 50, nullable: true),
                     Created = table.Column<DateTime>(type: "datetime", nullable: true),
                     ModifiedBy = table.Column<string>(type: "varchar(50)", unicode: false, maxLength: 50, nullable: true),
-                    Modified = table.Column<DateTime>(type: "datetime", nullable: true),
-                    Active = table.Column<bool>(type: "bit", nullable: true)
+                    Modified = table.Column<DateTime>(type: "datetime", nullable: true)
                 },
                 constraints: table =>
                 {

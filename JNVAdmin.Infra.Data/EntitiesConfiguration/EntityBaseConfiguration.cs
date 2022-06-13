@@ -9,21 +9,22 @@ namespace JNVAdmin.Infra.Data.EntitiesConfiguration
         public static void Configure(EntityTypeBuilder<T> builder)
         {
             //Attributes
-            builder.Property(e => e.Id).ValueGeneratedOnAdd();
+            builder.Property(e => e.Id)
+                .ValueGeneratedOnAdd();
 
             builder.Property(e => e.Created)
                 .HasColumnType("datetime");
 
             builder.Property(e => e.CreatedBy)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                .HasMaxLength(50)
+                .IsUnicode(false);
 
             builder.Property(e => e.Modified)
-                    .HasColumnType("datetime");
+                .HasColumnType("datetime");
 
             builder.Property(e => e.ModifiedBy)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                .HasMaxLength(50)
+                .IsUnicode(false);
         }
     }
 }

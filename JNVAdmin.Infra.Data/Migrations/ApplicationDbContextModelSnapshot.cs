@@ -25,9 +25,6 @@ namespace JNVAdmin.Infra.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<bool?>("Active")
-                        .HasColumnType("bit");
-
                     b.Property<decimal?>("AvarageAge")
                         .HasColumnType("decimal(18,2)");
 
@@ -82,9 +79,6 @@ namespace JNVAdmin.Infra.Data.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<bool?>("Active")
-                        .HasColumnType("bit");
 
                     b.Property<DateTime?>("Created")
                         .HasColumnType("datetime");

@@ -13,10 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\JNVAdmin.Application\JNVAdmin.Application.csproj" />
     <ProjectReference Include="..\JNVAdmin.Infra.IoC\JNVAdmin.Infra.IoC.csproj" />
   </ItemGroup>
 

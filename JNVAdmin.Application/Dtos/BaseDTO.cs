@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.Json.Serialization;
 
 namespace JNVAdmin.Application.Dtos
 {
@@ -9,6 +10,5 @@ namespace JNVAdmin.Application.Dtos
         public DateTime? Created { get; set; }
         public string ModifiedBy { get; set; }
         public DateTime? Modified { get; set; }
-        public bool? Active { get; set; }
     }
 }

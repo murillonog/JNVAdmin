@@ -1,3 +1,4 @@
+using JNVAdmin.API.Mappings;
 using JNVAdmin.Infra.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -20,6 +21,7 @@ namespace JNVAdmin.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddInfrastructureAPI(Configuration);
+            services.AddAutoMapper(typeof(ViewModelToDTOMappingProfile));
             services.AddInfrastructureSwagger();
             services.AddControllers();
         }

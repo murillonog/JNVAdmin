@@ -10,7 +10,7 @@ namespace JNVAdmin.Domain.Tests
         [Fact(DisplayName = "Create Snack OK")]
         public void CreateSnack_WithValidParameters_ResultObjectValidState()
         {
-            Action action = () => new Snack(Guid.NewGuid(), "Snack Name", "admin");
+            Action action = () => new Snack("Snack Name", "admin", "tester");
             action.Should().NotThrow<JNVAdmin.Domain.Validation.DomainExceptionValidation>();
         }
     }
